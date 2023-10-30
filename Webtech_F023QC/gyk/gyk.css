@@ -1,0 +1,49 @@
+.accordion {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    text-align: left;
+    border: none;
+    outline: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+
+  .active, .accordion:hover,.accordion:hover::after {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+
+  .panel {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 18px;
+    width: 80%;
+    text-align: left;
+    transition: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-left: 10%;
+    display: none;
+  }
+
+  .accordion:after {
+    content: '\25EF';
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\25C9";
+    color: white;
+    font-size: 18px;
+  }

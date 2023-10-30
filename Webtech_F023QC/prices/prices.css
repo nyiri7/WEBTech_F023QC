@@ -1,0 +1,13 @@
+#header_row{
+    background-color: black;
+    color: white;
+    border-color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+a{
+    color: black;
+    font-weight: bold;
+}

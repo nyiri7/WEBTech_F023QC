@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resources/global.css">
+    <link rel="stylesheet" href="sticker/sticker.css">
+    <title>RideIt</title>
+</head>
+<body>
+    <div class="section">
+        <div class="form_holder">
+            
+            <div class="progress_bar">
+                <div id="elso">1</div>
+                <hr id="line1">
+                <div id="masodik">2</div>
+                <hr id="line2">
+                <div id="harmadik">3</div>
+            </div>
+            
+
+
+
+
+            <form>
+                <div class="form_page">
+                    <div>
+                        <p>Név:</p>
+                        <input id="nev" type="text" required>
+                    </div>
+                    <div>
+                        <p>Cím:</p>
+                        <input id="cim" type="text" required>
+                    </div>
+                    <div>
+                        <p>Email:</p>
+                        <input id="email" type="text" required>
+                    </div>
+                    <div>
+                        <p>Telefonszám:</p>
+                        <input id="tel" type="text" required>
+                    </div>
+                </div>
+                <div class="form_page">
+
+                    <div class="container">
+
+                        <div class="content">
+                            <div style="margin-bottom: 10px;">
+                                Válaszd ki a logót:
+                                <select id="logos">
+                                    <option value="HardLine">Hard Line</option>
+                                    <option value="Giant">Giant</option>
+                                    <option value="KTM">KTM</option>
+                                    <option value="RideIt">Ride It!</option>
+                                </select>
+                            </div>
+
+                            <div class="logoshow">
+                                <img id="kep" src="sticker/Stickers/red-bull-hardline-logo.png" alt="">
+                            </div>
+                        </div>
+                        <div style="padding-left: 10px;"  class="content">
+                            <div style="margin-bottom: 10px;">
+                                Add meg a háttérszínt:
+                            </div>
+
+                            <div>
+                                <p>Red:</p>
+                                <input type="range" min="0" max="255" value="0" class="slicer" id="red">
+                            </div>
+                            <div>
+                                <p>Green:</p>
+                                <input type="range" min="0" max="255" value="0" class="slicer" id="green">
+                            </div>
+                            <div>
+                                <p>Blue:</p>
+                                <input type="range" min="0" max="255" value="0" class="slicer" id="blue">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form_page">
+                    <div class="container">
+                        <div class="content">
+                            <div class="logoshow">
+                                <img id="kep2" src="sticker/Stickers/red-bull-hardline-logo.png" alt="">
+                            </div>
+                        </div>
+                        <div style="padding-left: 10px;" class="content">
+                            <div style="margin-bottom: 10px;">
+                                <h2>Rendelés adatai:</h2>
+                            </div>
+                            <div>
+                                <p style="font-weight: bold;">Név:</p>
+                                <p id="nev_d"></p>
+                            </div>
+                            <div>
+                                <p style="font-weight: bold;">Cím:</p>
+                                <p id="cim_d"></p>
+                            </div>
+                            <div>
+                                <p style="font-weight: bold;">Email:</p>
+                                <p id="email_d"></p>
+                            </div>
+                            <div>
+                                <p style="font-weight: bold;">Telefonszám:</p>
+                                <p id="tel_d"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="buttons">
+                <button id="back-button">Back</button>
+                <button id="next-button">Next</button>
+                <button id="rendeles-button">Rendelés</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="sticker/stickerform.js"></script>
+</body>
+</html>

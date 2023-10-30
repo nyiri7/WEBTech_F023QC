@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resources/global.css">
+    <link rel="stylesheet" href="prices/prices.css">
+    <link rel="stylesheet" href="Resources/card.css">
+
+    <style>
+        table,td,tr{
+            border: solid black;
+            border-collapse: collapse;
+        }
+        td{
+            width: 25%;
+        }
+
+        @keyframes spin {
+             0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #loader {
+            border-radius: 50%;
+            border-top: 16px solid black;
+            border-right: 16px solid black;
+            border-bottom: 16px solid black;
+            border-left: 16px solid white;
+            width: 10vh;
+            height: 10vh;
+            animation: spin 2s linear infinite;
+        }
+    </style>
+
+    <title>RideIt</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img style="max-height: 10vh;" src="Resources/logo.png" alt=""></a>
+          </div>
+          <div class="links">
+            <a href="login.html">Belépés/Regisztráció</a>
+          </div>
+          <div class="menu">
+            <a href="sticker.html">FREE Sticker</a>
+            <a href="prices.html" style="margin-left: 5%; margin-right: 5%;">Árak</a>
+            <a href="contact.html" style="margin-right: 5%;">Kapcsolat</a>
+          </div>
+    </header>
+    <main>
+        <h1>Árak</h1>
+        <p style="width: 100%; text-align: center; margin-top: 1%; font-size: 24px;">Cégünk büszkén kínálja minőségi termékeit és szolgáltatásait, és itt megtalálja azoknak az árait. Az alábbiakban részleteket talál az árakról és az elérhető lehetőségekről.</p>
+        <div class="white_segment">
+            <div class="section">
+                <div class="big_card">
+                    <div class="content">
+                        <div class="big">
+                            <img src="prices/Resources/original_DSC7188.jpg" alt="">
+                        </div>
+                        <div class="small">
+                            <h1 style="margin-top: 20%;">Termékek és Árak</h1>
+                            <p>
+                                Választékunkban számos kiváló minőségű termék található, azonban jelenleg nincs lehetőség a weboldalon keresztül vásárolni. A bolti árakat az oldal alján, egy táblázatban találhatja meg.
+                            </p>
+                            <p>
+                                Természetesen nem csak ezek a termékeink vannak, a boltban nagyobb választék van a biciklik és a kiegészítők között.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="big_card">
+                    <div class="content">
+                        <div class="small">
+                            <h1 style="margin-top: 20%;">Árajánlat</h1>
+                            <p>
+                                Ha több terméket is szeretne venni nagy mennyiségben, akkor kérhet tőlünk árajánlatot. Ezt a kapcsolatok menüpont alatt tudja megtenni.
+                            </p>
+                        </div>
+                        <div class="big">
+                            <img src="prices/Resources/rr.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="big_card">
+                    <div class="content">
+                        <div class="big">
+                            <img src="prices/Resources/07f74b393b6a5b45285140a2ddc92f02.png" alt="">
+                        </div>
+                        <div class="small">
+                            <h1 style="margin-top: 20%;">Kedvezmények és Akciók</h1>
+                            <p>
+                                Rendszeresen kínálunk különleges kedvezményeket és akciókat, hogy még vonzóbbá tegyük ajánlatainkat. Ne hagyja ki ezeket az alkalmakat! Kattintson a Kedvezmények oldalunkra, hogy részletesen megismerje aktuális ajánlatainkat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="big_card">
+                    <div class="content">
+                        <div class="small">
+                            <h1 style="margin-top: 20%;">Gyakori Kérdések</h1>
+                            <p>
+                                Ha további információra van szüksége az árakkal, a termékekkel vagy a szolgáltatásokkal kapcsolatban, kérjük, olvassa el <a href="gyk.html">Gyakori Kérdéseinket</a> vagy lépjen kapcsolatba velünk. Válaszolunk minden kérdésére!
+                            </p>
+                        </div>
+                        <div class="big">
+                            <img src="prices/Resources/s1600_20120602_bend_keene_0004.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <h1>
+            Prices
+        </h1>
+        <div style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%; margin-bottom: 10vh;">
+            <table id="tabla" style="width: 100%; visibility: hidden;">
+                <tr id="header_row">
+                    <td>Bike Name</td>
+                    <td>Road/MTB</td>
+                    <td>Price (HUF)</td>
+                    <td>Professional/Non-Professional</td>
+                </tr>
+                <tr>
+                    <td>Trek Domane SL6</td>
+                    <td>Road</td>
+                    <td>871,984</td>
+                    <td>Professional</td>
+                </tr>
+                <tr>
+                    <td>Specialized Rockhopper</td>
+                    <td>MTB</td>
+                    <td>186,863</td>
+                    <td>Non-Professional</td>
+                </tr>
+                <tr>
+                    <td>Giant TCR Advanced Pro 1</td>
+                    <td>Road</td>
+                    <td>984,000</td>
+                    <td>Professional</td>
+                </tr>
+                <tr>
+                    <td>Santa Cruz Bronson</td>
+                    <td>MTB</td>
+                    <td>1,299,463</td>
+                    <td>Professional</td>
+                </tr>
+                <tr>
+                    <td>Cannondale Synapse</td>
+                    <td>Road</td>
+                    <td>724,970</td>
+                    <td>Non-Professional</td>
+                </tr>
+                <tr>
+                    <td>Trek Fuel EX 8</td>
+                    <td>MTB</td>
+                    <td>1,067,856</td>
+                    <td>Non-Professional</td>
+                </tr>
+                <tr>
+                    <td>Pinarello Dogma F12</td>
+                    <td>Road</td>
+                    <td>3,600,000</td>
+                    <td>Professional</td>
+                </tr>
+                <tr>
+                    <td>Yeti SB130</td>
+                    <td>MTB</td>
+                    <td>1,487,978</td>
+                    <td>Professional</td>
+                </tr>
+                <tr>
+                    <td>Scott Addict RC 20</td>
+                    <td>Road</td>
+                    <td>1,054,583</td>
+                    <td>Professional</td>
+                </tr>
+                <tr>
+                    <td>Specialized Stumpjumper</td>
+                    <td>MTB</td>
+                    <td>1,119,938</td>
+                    <td>Non-Professional</td>
+                </tr>
+            </table>
+            <div id="load" style="position: absolute; font-weight: bold;">
+                <div id="loader"></div>
+                <p style="margin-top: 10px;">Loading table...</p>
+            </div>
+
+            
+        </div>
+        
+    </main>
+    <script src="Resources/observe.js"></script>
+    <script src="prices/prices.js"></script>
+</body>
+</html>

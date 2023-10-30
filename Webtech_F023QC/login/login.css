@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+h1{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+.rightdiv{
+    min-height: 100%;
+    min-width: 30%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    margin-top: 5%;
+}
+
+.inputs{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+span,a{
+    text-decoration: underline;
+    color: blue;
+    font-weight: bold;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+
+.videologin{
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 1;
+    min-width: 70%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: changeBackground 25s infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('Resources/Login/mtb2.jpg');
+    }
+    25% {
+        background-image: url('Resources/Login/mtb3.jpg');
+    }
+    50% {
+        background-image: url('Resources/Login/road1.jpg');
+    }
+    75% {
+        background-image: url('Resources/Login/road2.jpg');
+    }
+    100% {
+        background-image: url('Resources/Login/mtb2.jpg');
+    }
+}
+
+
+input[type=text], input[type=password],input[type=date]{
+    width: 90%;
+    outline: none;
+    border:none;
+    padding: 12px;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 30px;
+    background-color: rgb(236, 234, 234);
+  }
+
+
+  input[type=text]:focus,input[type=password]:focus,input[type=date]:focus{
+    border:none;
+    width: 90%;
+    padding: 12px;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 30px;
+
+    background-color: lightgray;
+  }
+
+  input[type=checkbox]{
+    border:none;
+    padding: 12px;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: black;
+  }
+
+
+
+  
+  input[type=redio]{
+    border:none;
+    padding: 12px;
+    border-bottom: 2px solid black;
+
+  }
+
+
+
+  button{
+    width: 30%;
+    outline: none;
+    border:none;
+    padding: 12px;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 30px;
+    background-color: black;
+    color: white;
+    margin-left: 60%;
+  }
+
+
+  .error{
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+  }

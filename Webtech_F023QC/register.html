@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login/login.css">
+    <title>RideIt</title>
+</head>
+<body>
+
+
+    <div class="rightdiv">
+        <form id="register" class="inputs">
+            <h1>Regisztráció</h1>
+            <p style="font-weight: bold;">Felhasználónév</p>
+            <input type="text" id="felhn" required>
+            <p style="font-weight: bold;">Jelszó</p>
+            <input style="margin-bottom: 0;" type="password" id="pwd" required>
+            <p style="margin-bottom: 30px;">(legalább 8 karakter hosszú és tartalmaz nagy betűt)</p>
+            <p style="font-weight: bold;">Jelszó megerősítése</p>
+            <input type="password" id="pwda" required>
+            <p  style="font-weight: bold;">Születési dátum:</p>
+            <input style="margin-bottom: 0;" type="date" id="birthdate" name="birthdate" required>
+            <p style="margin-top: 5%;">Nem:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label>Férfi</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label>Nő</label>
+            <p style="margin-top: 5%;"><input type="checkbox" required> Elfogadom a <span onclick="alert('Adataid kezelésének célja: Adataidat a weboldalunk jobb felhasználói élmény biztosítása érdekében, valamint a szolgáltatásaink nyújtásához és fejlesztéséhez gyűjtjük.\nMilyen adatokat kezelünk?\nNév, e-mail cím, telefonszám, IP-cím, valamint a weboldal használata során generált cookie-k.\nHogyan tároljuk az adataidat?\nAdataidat biztonságos környezetben tároljuk, melyet modern technológiával védünk az illetéktelen hozzáféréstől.')">Felhasználói feltételeket</span>.</p>
+            <p style="margin-top: 5%;">Ha már van fiókod próbálj meg <a href="login.html">bejelentkezni</a>.</p>
+            <button style="margin-top: 5%;" type="submit" >Regisztráció</button>
+
+        </form>
+    </div>
+
+
+    <div class="videologin">
+    </div>
+
+
+    <script src="login/register.js"></script>
+</body>
+</html>

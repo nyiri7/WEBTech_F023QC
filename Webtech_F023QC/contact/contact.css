@@ -1,0 +1,9 @@
+textarea{
+    padding: 1%;
+    width: 100%;
+    border: 3px solid black;
+}
+
+textarea:focus{
+    outline: none;
+}
